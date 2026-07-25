@@ -1,8 +1,14 @@
 aid: consure-medical
 name: Consure Medical
-description: 'Consure Medical is a company surfaced as a portfolio company of accel and added to the API
-  Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Consure Medical is a nurse-centric medical device company with Silicon Valley roots
+  that develops incontinence and critical-care management solutions for hospitals. Its product line
+  includes the QiVi family of truly external male and female urine management catheters, the Qora SMK
+  manual stool management kit, and the Qoramatic automated stool management system, all designed to
+  reduce catheter-associated urinary tract infections (CAUTI), incontinence-associated dermatitis
+  (IAD), and hospital-acquired conditions while improving patient dignity. The company operates from
+  San Diego, California and New Delhi, India, and markets its devices through partners such as Medline.
+  This is a company profile in the API Evangelist network; Consure Medical publishes no public developer
+  API, documentation, or specification surface at the time of enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/consure-medical/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +16,28 @@ x-backed-by:
 - accel
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://www.consuremedical.com/wp-content/uploads/2021/12/logo-new.png
 tags:
 - Company
 - Healthcare
+- Medical Devices
+- Incontinence Management
+- Critical Care
+- MedTech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/consure-medical-domain-security.yml
 - type: Website
-  url: http://www.consuremedical.com
+  url: https://www.consuremedical.com
+- type: Blog
+  url: https://www.consuremedical.com/articles/
+- type: PrivacyPolicy
+  url: https://www.consuremedical.com/privacy/
+- type: TermsOfService
+  url: https://www.consuremedical.com/term-of-use/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
